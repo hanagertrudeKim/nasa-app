@@ -1,7 +1,8 @@
 import React from 'react'
+import * as S from './Footer.style'
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <S.FooterWrap>Footer</S.FooterWrap>
   )
 }
