@@ -2,7 +2,7 @@ import {Routes, Route} from "react-router-dom"
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./components/Home";
+import Home from "./view/Home/Home";
 import Lab from "./components/Lab";
 import Project from "./components/Project";
 import Writing from "./components/Writing";
