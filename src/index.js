@@ -5,8 +5,11 @@ import { BrowserRouter } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  margin:0;
-  padding:0;
+  *{
+    margin: 0;
+    padding: 0;
+    background-color: #0F151C;
+  }
 `
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
