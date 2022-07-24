@@ -1,21 +1,21 @@
 import {Routes, Route} from "react-router-dom"
-import About from "./view/About";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./view/Home/Home";
-import Lab from "./view/Lab";
-import Project from "./view/Project";
-import Writing from "./view/Writing";
+import Home from "./view/Home/Home"
+import MarsTravel from "./view/MarsTravel";
+import Planet from "./view/Planet";
+import Reference from "./view/Reference";
+import SolarSystem from "./view/SolarSystem";
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/writing" element={<Writing/>} />
-        <Route path="/lab" element={<Lab/>} />
-        <Route path="/project" element={<Project/>} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/marsTrevel" element={<MarsTravel/>} />
+        <Route path="/planet" element={<Planet/>} />
+        <Route path="/reference" element={<Reference/>} />
+        <Route path="/solarSystem" element={<SolarSystem/>} />
         <Route path="/" element={<Home/>} />
       </Routes>
       <Footer />

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-
 export const Logo = styled.img`
   width: 130px;
   height: 70px;
@@ -17,8 +16,9 @@ export const Wrap = styled.div`
   display: flex;
   place-content: center;
   place-items: center;
-  gap: 25px;
+  gap: 45px;
 `
+
 export const Category = styled.li`
   list-style: none;
   font-size: 12px;
@@ -28,7 +28,7 @@ export const Category = styled.li`
 export const StledLink = styled(Link)`
   text-decoration: none;
   &:focus, &:hover, &:visited, &:link, &:active{
-    text-decoration: none;
+    text-decoration: none; 
     color: white;
   }
 ` 
