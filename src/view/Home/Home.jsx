@@ -18,7 +18,6 @@ export default function Home() {
 
   return (
     <S.HomeWrap>
-      <Planet />
     </S.HomeWrap>
   )
 }
