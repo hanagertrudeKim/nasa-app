@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import * as S from "./Home.style";
 import axios from 'axios';
 import API_KEY from '../../api/nasaApi';
+import Planet from './Planet';
+
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -15,7 +18,7 @@ export default function Home() {
 
   return (
     <S.HomeWrap>
-      NASA
+      <Planet />
     </S.HomeWrap>
   )
 }
