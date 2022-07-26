@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import categoryReducer from "./categoryReducer"
+import planetReducer from "./planetReducer"
 
 const store = configureStore({
-  reducer: {categoryReducer}
+  reducer: {planetReducer}
 })
 export default store;

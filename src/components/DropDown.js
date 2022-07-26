@@ -2,26 +2,18 @@ export const PlanetDropDown = [
   {
     id: 1,
     title: "Earth",
-    path: "",
+    path: "/planet/earth",
   },
-  {
+   {
     id: 2,
-    title: "소행성",
-    path: "",
+    title: "Asteroid",
+    path: "/planet/asteroid",
   },
   {
     id: 3,
-    title: "Moon",
-    path: "",
-  },
-  {
-    id: 4,
-    title: "Mars",
-    path: "",
-  },
-  {
-    id: 5,
-    title: "Vesta",
-    path: "",
+    title: "Planets",
+    path: "/planet/planets",
   }
 ];
+
+ 
