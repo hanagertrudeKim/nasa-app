@@ -26,9 +26,9 @@ export default function APOD() {
   const VideoAPOD = () => {
     return (
       <S.VideoWrap>
-        <S.Title>title : {data.title} </S.Title><br/>
-        <h3>date: {data.date} </h3><br />
-        explanation : {data.explanation} <br/>
+        <S.Title>Title : {data.title} </S.Title><br/>
+        <S.Explain>date: {data.date} <br/> <br/>
+        explanation : {data.explanation} <br/></S.Explain>
         <S.VideoLink><a href={data.url}>Go to the video</a></S.VideoLink>
       </S.VideoWrap>
     )

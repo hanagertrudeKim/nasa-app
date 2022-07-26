@@ -4,13 +4,17 @@ import styled from "styled-components";
 export const APODWrap = styled.div`
   margin: 100px;
   height: 500px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
 `
 
 export const APODTitle = styled.div`
   font-size: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   margin-bottom: 40px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 `
 
 export const PhotoWrap = styled.div`
@@ -22,22 +26,33 @@ export const Photo = styled.img`
 
 export const VideoWrap = styled.div`
   border: 1px solid gray;
-  width: 100%;
-  height: 600px;
+  width: 80%;
   text-align: center;
-  padding: 30px;
-  padding-top: 60px;
   font-family: monospace;
   word-spacing: 1px;
   line-height: 160%;
   color: beige;
+  font-size: 15px;
 `
 
 export const Title = styled.div`
-  font-size: 20px;
+  padding: 15px;
+  color: rgb(255 255 255);
+  font-family: Metropolis,Helvetica,Arial,sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  font-weight: bold;
+  background-color: #2A2B2D;
+`
+
+export const Explain = styled.div`
+  padding-left: 50px;
+  padding-right: 50px;
 `
 
 export const VideoLink = styled.div`
-  font-size: 17px;
-  padding-top: 40px;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 `
