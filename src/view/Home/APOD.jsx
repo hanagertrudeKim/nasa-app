@@ -3,14 +3,17 @@ import axios from 'axios';
 import API_KEY from '../../api/nasaApi';
 import * as S from './APOD.style'
 
+
 export default function APOD() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
+  const [mediaType, setMediaType] = useState();
 
   useEffect(() => {
     axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
     .then((res)=> {
       setData(res.data);
-      console.log(res.data)
+      setMediaType(res.data.media_type);
+      console.log(res.data);
     })
   },[])
 
@@ -18,7 +21,12 @@ export default function APOD() {
   const PhotoAPOD = () => {
     return (
       <S.PhotoWrap>
-        <S.Photo src='' />
+        <S.Photo src={data.hdurl} />
+        <S.ExplainWrap>
+        <S.Title>Title : {data.title} </S.Title><br/>
+        <S.Explain>date: {data.date} <br/> <br/>
+        explanation : {data.explanation} <br/></S.Explain>
+        </S.ExplainWrap>
       </S.PhotoWrap>
     )
   }
@@ -38,7 +46,7 @@ export default function APOD() {
   return (
     <S.APODWrap>
       <S.APODTitle> APOD  - Astronomy Picture Of the Day</S.APODTitle> 
-      { data.media_type === "image" ? <PhotoAPOD /> : <VideoAPOD /> }
+      {mediaType === "video" ? <VideoAPOD /> : <PhotoAPOD />}
     </S.APODWrap>
   )
 }
