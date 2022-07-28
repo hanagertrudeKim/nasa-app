@@ -20,7 +20,7 @@ function App() {
         <Route path="/planet/earth" element={<Earth/>} />
         <Route path="/planet/planets" element={<Planets/>} />
         <Route path="/planet/asteroid" element={<Asteroid/>} />
-        <Route path="/marsTrevel" element={<MarsTravel/>} />
+        <Route path="/marsTravel" element={<MarsTravel/>} />
         <Route path="/moon" element={<Moon/>} />
         <Route path="/reference" element={<Reference/>} />
         <Route path="/solarSystem" element={<SolarSystem/>} />

@@ -1,22 +1,29 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import API_KEY from '../api/nasaApi';
+import * as S from './Reference.style'
 
 
 export default function Asteroid() {
 
   const [data, setData] = useState([]);
+  const [arr, setArr] = useState([]);
 
   useEffect(() => {
 
-    axios.get(`ttps://api.nasa.gov/techport/api/projects/17792?api_key=${API_KEY}`)
+    axios.get(`https://api.nasa.gov/techtransfer/patent/?engine&api_key=${API_KEY}`)
     .then((res)=> {
       setData(res.data);
-      console.log(res);
-    });
-  },[])
+      setArr(res.data?.results)
+      console.log(res.data);
+    }).catch((err) => console.log(err));
+  },[]);
 
   return (
-    <div>Reference</div>
-  )
-}
+    <S.Wrap>
+      {arr.map((data) => (
+        <div key={data[1]}>{data}[2]</div>
+        ))}
+    </S.Wrap>
+  );
+};
