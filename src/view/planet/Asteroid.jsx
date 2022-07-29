@@ -26,7 +26,7 @@ export default function Asteroid() {
     <S.Warp> 
       <S.CountWrap>
         <S.CountTitle>현재 지구 주변의 소행성 수</S.CountTitle>
-        <S.Count>{data.element_count}</S.Count>  
+        <S.Count>{data?.element_count}</S.Count>  
       </S.CountWrap>
       {/* 날짜 별 소행성 수 알아보기 */}
     </S.Warp>
