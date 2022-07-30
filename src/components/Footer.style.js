@@ -1,7 +1,38 @@
 import styled from "styled-components";
+import footer from "../assets/image/footer.jpg";
 
 export const FooterWrap = styled.div`
-  width: 100%;
-  padding-bottom: 100px;
-  border: 1px solid gray;
+  margin-top: 200px;
+  height: 100vh;
+  width: 100vw;
+  filter: brightness(65%);
+  background-image: url('${footer}');
+  background-size: cover;
+  display: flex;
+  place-content: center;
+`
+
+export const ConnectWrap = styled.div`
+ background: none;
+ color: white;
+ text-align: center;
+ font-size: 30px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: 700;
+ letter-spacing: 2px;
+`
+
+export const IconWrap = styled.div`
+  background: none;
+  margin-top: 30px;
+  `
+
+export const IconLink = styled.a`
+  width: 48px;
+  height: 48px;
+  &:-webkit-any-link {
+    color: none;
+    cursor: pointer;
+    text-decoration: none;
+}
 `
