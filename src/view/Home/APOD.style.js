@@ -11,7 +11,7 @@ export const APODWrap = styled.div`
 `
 
 export const APODTitle = styled.div`
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 40px;
   font-weight: 700;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

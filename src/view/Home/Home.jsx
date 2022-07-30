@@ -8,10 +8,12 @@ export default function Home() {
 
   return (
     <S.HomeWrap>
-      <Clock />
-      <S.EarthWrap>
+      <S.ClockWrap>
+        <Clock />
+      </S.ClockWrap>
+      <S.ModelWrap>
         <Earth3dModel />
-      </S.EarthWrap>
+      </S.ModelWrap>
       <APOD />
     </S.HomeWrap>
   )

@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux/es/exports';
 import { planetHide } from '../../store/planetReducer';
 import API_KEY from '../../api/nasaApi';
-import * as S from './Asteroid.style'
+import * as S from './Asteroid.style';
+import Clock from '../../components/clock';
 
 
 export default function Asteroid() {
@@ -24,6 +25,7 @@ export default function Asteroid() {
 
   return (
     <S.Warp> 
+      <Clock />
       <S.CountWrap>
         <S.CountTitle>현재 지구 주변의 소행성 수</S.CountTitle>
         <S.Count>{data?.element_count}</S.Count>  

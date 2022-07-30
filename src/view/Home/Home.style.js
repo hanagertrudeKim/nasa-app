@@ -8,7 +8,13 @@ export const HomeWrap = styled.div`
   place-items: center;
   color: white;
 `
-export const EarthWrap = styled.div`
-  width: 500px;
+export const ModelWrap = styled.div`
+  width: 100%;
   height: 500px;
+  margin-bottom: 100px;
+`
+
+export const ClockWrap = styled.div`
+  margin-top: 150px;
+  margin-bottom: 30px;
 `
