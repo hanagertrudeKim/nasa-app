@@ -33,33 +33,64 @@ export const Category = styled.li`
 
 export const StyleLink = styled(Link)`
   text-decoration: none;
-  &:focus, &:hover, &:visited, &:link, &:active{
+  &:focus, &:visited, &:link, &:active{
     text-decoration: none; 
     color: white;
   }
+  &:hover{
+   color: lightblue ;
+  }
 ` 
 
-export const DropDownWrap = styled.ul`
-  display: ${props => props.dropDown ? "true" : "none"};
-  width: 70px;
+export const SelectWrap = styled.div`
+  .sub-menu{
+    display: none;
+  }
+
+  &:hover{
+    display: block;
+  .sub-menu{
+    display: block;
+  }
+  .ul{
+    display: block;
+  }
+  .li{
+    display: block;
+  }
+}
+ position: relative;
+`
+
+export const OptionWrap = styled.div`
+  color: white;
+  cursor: pointer;
+  &:hover{
+    display: block;
+  }
   position: absolute;
-  list-style: none;
-  text-align: start;
+  top: 15px;
 `
 
-export const SubLinkWrap = styled.li`
-  width: 100%;
+export const OptionLinkWrap = styled.ul`
+  padding-top: 23px;
+  padding-left: 15px;
+  padding-right: 20px;
+`
+export const Select = styled.div`
+  color: white;
+  cursor: pointer;
+  &:hover{
+    color: lightblue;
+  }
 `
 
-export const StyleSubLink = styled(Link)`
-  display: block;
-  position: relative;
-  top: 20px;
+export const OptionLink = styled(Link)`
   width: 100%;
   height: 100%;
   text-decoration: none;
   color: white;
-  padding: 16px;
-  cursor: pointer;
-  background-color: gray;
+  &:hover{
+    color: lightblue;
+  }
 `

@@ -6,7 +6,6 @@ import MarsTravel from "./view/MarsTravel";
 import Moon from "./view/Moon";
 import Asteroid from "./view/planet/Asteroid";
 import Earth from "./view/planet/Earth";
-import Planet from "./view/planet/Planet";
 import Planets from "./view/planet/Planets";
 import Reference from "./view/Reference";
 import SolarSystem from "./view/SolarSystem";
@@ -16,7 +15,6 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/planet" element={<Planet/>} />
         <Route path="/planet/earth" element={<Earth/>} />
         <Route path="/planet/planets" element={<Planets/>} />
         <Route path="/planet/asteroid" element={<Asteroid/>} />
