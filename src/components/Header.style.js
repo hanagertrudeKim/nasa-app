@@ -11,10 +11,11 @@ export const Logo = styled.img`
 `
 
 export const Wrap = styled.div`
+  margin: 0;
   padding-top: 15px;
   padding-bottom: 10px;
   border-bottom: 1px solid gray;
-  width: 100%;
+  width: 100vw;
   height: 50px;
   display: flex;
   place-content: flex-end;
