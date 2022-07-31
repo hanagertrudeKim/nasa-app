@@ -5,7 +5,7 @@ export const FooterWrap = styled.div`
   margin-top: 200px;
   height: 100vh;
   width: 100vw;
-  filter: brightness(65%);
+  filter: brightness(70%);
   background-image: url('${footer}');
   background-size: cover;
   display: flex;
@@ -35,4 +35,11 @@ export const IconLink = styled.a`
     cursor: pointer;
     text-decoration: none;
 }
+`
+export const Explain = styled.div`
+  margin-top: 100px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
 `

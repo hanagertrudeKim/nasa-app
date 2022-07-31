@@ -17,6 +17,13 @@ export default function Footer() {
           <S.IconLink href='https://www.instagram.com/nasasolarsystem/'>
           <img src={instagram} alt='instagram'/> </S.IconLink>
         </S.IconWrap>
+
+        <S.Explain>
+        NASA Official: Kristen Erickson<br/>
+        Site Manager: Hana Kim <br/>
+        Science Writer: Amanda Barnett<br/>
+        Social Media Lead: Bill Dunford
+        </S.Explain>
       </S.ConnectWrap>  
     </S.FooterWrap>
   )

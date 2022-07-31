@@ -24,10 +24,11 @@ export const Wrap = styled.div`
 
 export const Category = styled.li`
   list-style: none;
-  font-size: 13px;
+  font-size: 15px;
   font-family: Metropolis,Helvetica,Arial,sans-serif;
   padding-left: 20px;
   padding-right: 50px;
+  font-weight: 550;
 `
 
 
