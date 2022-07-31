@@ -1,8 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux/es/exports';
 import API_KEY from '../../api/nasaApi';
-import * as S from './Asteroid.style';
+import * as S from './Asteroid.styled';
 import Clock from '../../components/clock';
 
 

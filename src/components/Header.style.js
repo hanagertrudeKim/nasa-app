@@ -20,6 +20,7 @@ export const Wrap = styled.div`
   place-content: flex-end;
   place-items: center;
   position: fixed;
+  z-index: 100;
 `
 
 export const Category = styled.li`

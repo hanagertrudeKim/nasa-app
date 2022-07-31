@@ -19,6 +19,7 @@ export default function Footer() {
         </S.IconWrap>
 
         <S.Explain>
+        This site is maintained by Hana Kim with passion<br/>
         NASA Official: Kristen Erickson<br/>
         Site Manager: Hana Kim <br/>
         Science Writer: Amanda Barnett<br/>
