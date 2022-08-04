@@ -8,12 +8,13 @@ export const Wrap = styled.div`
   color: white;
   place-content: center;
   height: 100vh;
+  width: 100vw;
 `
 
 export const ModelWrap = styled.div`
   margin-top: 79px;
   width: 100vw;
-  height: 80vh;
+  height: 77vh;
 `
 export const SolarSystemWrap = styled.div`
   height: 100vh;

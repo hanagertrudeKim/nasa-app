@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Wrap = styled.div`
   text-align: center;
   color: white;
+  background: none;
 `
 
 const DateWrap = styled.div`

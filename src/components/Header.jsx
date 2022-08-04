@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <S.Wrap>      
       <S.StyleLink to="/">
-      <S.Logo alt="nasa-logo" src="./nasalogo.png" />
+      <S.Logo alt="nasa" src="./nasalogo.png" />
       </S.StyleLink>
       <S.Category><S.StyleLink to="/solarSystem">Solar System</S.StyleLink></S.Category>
       <S.Category>

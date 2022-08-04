@@ -42,4 +42,5 @@ export const Explain = styled.div`
   font-size: 15px;
   font-weight: 400;
   line-height: 150%;
+  background: none;
 `

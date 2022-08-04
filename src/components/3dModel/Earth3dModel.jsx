@@ -28,7 +28,7 @@ useGLTF.preload('/earth.glb')
 export const Earth3dModel = () => {
   return (
     <>
-    <Canvas camera={{fov: 8, position: [0, 10, 15]}} style={{background: "transeparent"}}>
+    <Canvas camera={{fov: 11, position: [0, 10, 15]}} style={{background: "transeparent"}}>
       <Suspense>
         <ambientLight intensity={3} />
         <Model />

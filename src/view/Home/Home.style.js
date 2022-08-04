@@ -9,8 +9,8 @@ export const HomeWrap = styled.div`
   color: white;
 `
 export const ModelWrap = styled.div`
-  width: 100%;
-  height: 500px;
+  width: 100vw;
+  height: 80vh;
   margin-bottom: 100px;
 `
 

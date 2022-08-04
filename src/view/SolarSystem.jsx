@@ -14,7 +14,6 @@ export default function SolarSystem() {
         Solar System
       </S.ModelExplain>
       <MoreBtn />
-
       </S.SolarSystemWrap>
     </S.Wrap>
   )
