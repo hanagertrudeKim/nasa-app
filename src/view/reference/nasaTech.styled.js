@@ -18,8 +18,8 @@ export const Wrap = styled.div`
 export const TitleWrap = styled(Link)`
   border: 1px solid #9BDAF1;
   margin-bottom: 20px;
-  width: 17vw;
-  height: 65vh;
+  width: 260px;
+  height: 400px;
   text-decoration: none;
   &:focus, &:hover, &:visited, &:link, &:active {
     text-decoration: none;
@@ -33,8 +33,8 @@ export const TitleWrap = styled(Link)`
 }
 `
 export const FrontImg = styled.img`
-  width: 17vw;
-  height: 15vw;
+  width: 260px;
+  height: 230px;
 `
 
 export const Title = styled.div`

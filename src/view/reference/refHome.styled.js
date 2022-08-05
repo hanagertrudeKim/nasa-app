@@ -10,9 +10,9 @@ export const Wrap = styled.div`
 export const Title = styled.div`
   margin-top: 50px;
   color: #9BDAF1;
-  font-size: 40px;
+  font-size: 50px;
   font-family: sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   padding-left: 280px;
 `
 
@@ -21,4 +21,5 @@ export const Reference = styled.div`
  display: flex;
  place-content: center;
  place-items: center;
+ color: rgb(58 58 58);
 `
