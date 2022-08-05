@@ -7,8 +7,9 @@ import Moon from "./view/Moon";
 import Asteroid from "./view/planet/Asteroid";
 import Earth from "./view/planet/Earth";
 import Planets from "./view/planet/Planets";
-import Reference from "./view/Reference";
+import RefHome from "./view/reference/RefHome";
 import SolarSystem from "./view/SolarSystem";
+import NasaTechDetail from "./view/reference/NasaTechDetail";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Route path="/planet/asteroid" element={<Asteroid/>} />
         <Route path="/marsTravel" element={<MarsTravel/>} />
         <Route path="/moon" element={<Moon/>} />
-        <Route path="/reference" element={<Reference/>} />
+        <Route path="/reference" element={<RefHome/>} />
+        <Route path="/reference/nasaTech/:id" element={<NasaTechDetail />} />
         <Route path="/solarSystem" element={<SolarSystem/>} />
         <Route path="/" element={<Home/>} />
       </Routes>
