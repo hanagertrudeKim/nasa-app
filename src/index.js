@@ -10,14 +10,17 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     background-color: #010001;
   }
-`
+  body{
+    overflow-x: hidden;
+  }
+`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <GlobalStyle/>
+    <GlobalStyle />
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </>
+  </>,
 );

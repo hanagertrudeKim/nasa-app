@@ -1,14 +1,14 @@
-import React, { Suspense, useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
-import { useFrame, Canvas } from '@react-three/fiber'
+import React, { Suspense, useRef } from 'react';
+import { useGLTF } from '@react-three/drei';
+import { useFrame, Canvas } from '@react-three/fiber';
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/moon.glb')
+  const { nodes, materials } = useGLTF('/moon.glb');
   const moonRef = useRef();
-  
-  useFrame(()=>{
-    moonRef.current.rotation.y -= -0.001
-  })
+
+  useFrame(() => {
+    moonRef.current.rotation.y -= -0.001;
+  });
 
   return (
     <group {...props} dispose={null} ref={moonRef}>
@@ -47,20 +47,20 @@ export function Model(props) {
         <mesh geometry={nodes.Object_33.geometry} material={materials.None} />
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/moon.glb')
+useGLTF.preload('/moon.glb');
 
 export const Moon3dModel = () => {
   return (
     <>
-    <Canvas camera={{fov: 80, position: [0, 10, 15]}} style={{background: "transeparent"}}>
-      <Suspense>
-        <ambientLight intensity={0.5} />
-        <Model />
-      </Suspense>
-    </Canvas>
-  </>
-  )
-}
+      <Canvas camera={{ fov: 80, position: [0, 10, 15] }} style={{ background: 'transeparent' }}>
+        <Suspense>
+          <ambientLight intensity={0.3} />
+          <Model />
+        </Suspense>
+      </Canvas>
+    </>
+  );
+};

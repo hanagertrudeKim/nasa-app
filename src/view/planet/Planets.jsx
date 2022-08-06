@@ -1,9 +1,5 @@
-import React from 'react'
-
+import React from 'react';
 
 export default function Planets() {
-
-  return (
-    <div>Planets</div>
-  )
+  return <div>Planets</div>;
 }

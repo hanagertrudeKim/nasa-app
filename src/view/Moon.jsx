@@ -1,10 +1,9 @@
-import React from 'react'
-import { Moon3dModel } from '../components/3dModel/Moon3dModel'
-import * as S from './Moon.styled'
-import Clock from '../components/clock'
+import React from 'react';
+import { Moon3dModel } from '../components/3dModel/Moon3dModel';
+import * as S from './Moon.styled';
+import Clock from '../components/Clock';
 
 export default function Planet() {
-
   return (
     <S.Wrap>
       <S.ClockWrap>
@@ -14,5 +13,5 @@ export default function Planet() {
         <Moon3dModel />
       </S.ModelWrap>
     </S.Wrap>
-  )
+  );
 }

@@ -1,15 +1,15 @@
-import React, { Suspense, useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { Suspense, useRef } from 'react';
+import { useGLTF } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/solar_system.glb')
+  const { nodes, materials } = useGLTF('/solar_system.glb');
   const solarSystemRef = useRef();
-  
-  useFrame(()=>{
-    solarSystemRef.current.rotation.y -= -0.0007
-    solarSystemRef.current.rotation.x -= -0.001
-  })
+
+  useFrame(() => {
+    solarSystemRef.current.rotation.y -= -0.0007;
+    solarSystemRef.current.rotation.x -= -0.001;
+  });
 
   return (
     <group {...props} dispose={null} ref={solarSystemRef}>
@@ -29,21 +29,23 @@ export function Model(props) {
         </group>
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/solar_system.glb')
-
+useGLTF.preload('/solar_system.glb');
 
 export const SolarSystem3dModel = () => {
   return (
     <>
-    <Canvas camera={{fov: 75, position: [620, 100, 600]}} style={{background: "transeparent"}}>
-      <Suspense>
-        <ambientLight intensity={1} />
-        <Model />
-      </Suspense>
-    </Canvas>
-  </>
-  )
-}
+      <Canvas
+        camera={{ fov: 75, position: [620, 100, 600] }}
+        style={{ background: 'transeparent' }}
+      >
+        <Suspense>
+          <ambientLight intensity={1} />
+          <Model />
+        </Suspense>
+      </Canvas>
+    </>
+  );
+};

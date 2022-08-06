@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrap = styled.div`
   display: flex;
@@ -8,16 +8,16 @@ export const Wrap = styled.div`
   place-content: center;
   height: 100vh;
   width: 100vw;
-`
+`;
 
 export const ModelWrap = styled.div`
   margin-top: 79px;
   width: 100vw;
   height: 77vh;
-`
+`;
 export const EarthWrap = styled.div`
   height: 100vh;
-`
+`;
 
 export const ModelExplain = styled.div`
   background: #272727;
@@ -30,5 +30,4 @@ export const ModelExplain = styled.div`
   place-content: center;
   place-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
-`
+`;
