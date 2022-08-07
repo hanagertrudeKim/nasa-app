@@ -9,10 +9,12 @@ const Wrap = styled.div`
 
 const DateWrap = styled.div`
   font-size: 18px;
+  background: none;
 `;
 
 const ClockWrap = styled.div`
   font-size: 27px;
+  background: none;
 `;
 
 export default function Clock() {

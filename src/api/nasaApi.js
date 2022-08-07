@@ -10,8 +10,8 @@ export const getNasaTech = () => {
   return axios.get(`https://api.nasa.gov/techtransfer/patent/?engine&api_key=${API_KEY}`);
 };
 
-export const getAsteroid = () => {
+export const getAsteroid = (date) => {
   return axios.get(
-    `https://api.nasa.gov/neo/rest/v1/feed?start_date=2022-07-27&end_date=2022-07-27&api_key=${API_KEY}`,
+    `https://api.nasa.gov/neo/rest/v1/feed?start_date=${date}&end_date=${date}&api_key=${API_KEY}`,
   );
 };
