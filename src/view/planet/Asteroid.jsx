@@ -1,21 +1,16 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import API_KEY from '../../api/nasaApi';
 import * as S from './Asteroid.styled';
 import Clock from '../../components/Clock';
+import { getAsteroid } from '../../api/nasaApi';
 
 export default function Asteroid() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    axios
-      .get(
-        `https://api.nasa.gov/neo/rest/v1/feed?start_date=2022-07-27&end_date=2022-07-27&api_key=${API_KEY}`,
-      )
-      .then((res) => {
-        setData(res.data);
-        console.log(res);
-      });
+    getAsteroid().then((res) => {
+      setData(res.data);
+      console.log(res);
+    });
   }, []);
 
   return (
