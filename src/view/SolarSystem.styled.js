@@ -8,6 +8,7 @@ export const Wrap = styled.div`
   place-content: center;
   height: 100vh;
   width: 100vw;
+  background-color: white;
 `;
 
 export const ModelWrap = styled.div`
@@ -21,7 +22,7 @@ export const SolarSystemWrap = styled.div`
 
 export const ModelExplain = styled.div`
   background: #272727;
-  height: 8vh;
+  height: 10vh;
   font-size: 38px;
   font-weight: 750;
   letter-spacing: 5px;
