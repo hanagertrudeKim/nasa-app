@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import API_KEY from '../../api/nasaApi';
 import * as S from './APOD.style';
+import { getAPOD } from '../../api/nasaApi';
 
 export default function APOD() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`).then((res) => {
+    getAPOD().then((res) => {
       setData(res.data);
       console.log(res.data);
     });
