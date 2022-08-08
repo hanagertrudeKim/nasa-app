@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Home from './view/home/Home';
 import MarsTravel from './view/MarsTravel';
 import Moon from './view/Moon';
-import Asteroid from './view/planet/Asteroid';
+import Asteroid from './view/planet/asteroid/Asteroid';
 import Earth from './view/planet/Earth';
 import Planets from './view/planet/Planets';
 import RefHome from './view/reference/RefHome';

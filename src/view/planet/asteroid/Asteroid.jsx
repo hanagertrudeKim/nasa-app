@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import * as S from './Asteroid.styled';
-import { getAsteroid } from '../../api/nasaApi';
+import { getAsteroid } from '../../../api/nasaApi';
+import stone from '../../../assets/image/asteroid-stone.png';
+import ruler from '../../../assets/image/ruler.png';
+import AsteroidClock from './AsteroidClock';
+import Explain from './Explain';
 
 export default function Asteroid() {
   const [data, setData] = useState();
@@ -8,7 +12,6 @@ export default function Asteroid() {
   const [btnIndex, setBtnIndex] = useState(1);
 
   const date = new Date();
-
   const year = date.getFullYear();
   const month = ('0' + (date.getMonth() + 1)).slice(-2);
   const day = ('0' + date.getDate()).slice(-2);
@@ -36,7 +39,7 @@ export default function Asteroid() {
     <S.Warp>
       <S.Background>
         <S.BoxWrap>
-          <S.ExplainWrap></S.ExplainWrap>
+          <Explain />
           <S.AsteroidWrap>
             <S.TitleWrap>
               <S.Title>Asteroid Watch</S.Title>
@@ -47,16 +50,24 @@ export default function Asteroid() {
                 return (
                   <S.DetailWrap key={data.id}>
                     <S.Detail>
-                      <S.Name>{data?.name}</S.Name>
+                      <S.Name>{(data?.name).slice(1, -1)}</S.Name>
                       <S.Text>DATE</S.Text>
-                      <S.Information>{data?.close_approach_date_full}</S.Information>
+                      <S.Information>
+                        {data.close_approach_data[0].close_approach_date_full}
+                      </S.Information>
                       <S.Text>DISTANCE</S.Text>
                       <S.Information>
                         {data.close_approach_data[0].miss_distance.kilometers}km
                       </S.Information>
+                      <S.Text>Velocity</S.Text>
+                      <S.Information>
+                        {data.close_approach_data[0].relative_velocity.kilometers_per_hour}km/h
+                      </S.Information>
                     </S.Detail>
                     <S.ImageWrap>
-                      <S.Image></S.Image>
+                      <AsteroidClock />
+                      <S.StoneImg src={stone} alt="stone"></S.StoneImg>
+                      <S.RulerImg src={ruler} alt="ruler"></S.RulerImg>
                       <S.ImageExplain>
                         {data.estimated_diameter.meters.estimated_diameter_max.toFixed(1)}m
                       </S.ImageExplain>

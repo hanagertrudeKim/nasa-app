@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import image from '../../assets/image/asteroid.jpg';
+import image from '../../../assets/image/asteroid.jpg';
 
 export const Warp = styled.div`
   padding-top: 60px;
@@ -7,6 +7,8 @@ export const Warp = styled.div`
   height: 100vh;
   background-image: url('${image}');
   background-size: cover;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap');
+  font-family: 'Roboto Mono', monospace;
 `;
 
 export const Background = styled.div`
@@ -21,19 +23,9 @@ export const Background = styled.div`
 export const BoxWrap = styled.div`
   background-color: rgb(16, 16, 17);
   width: 1000px;
-  height: 520px;
+  height: 500px;
   border-radius: 8%;
   display: flex;
-`;
-
-export const ExplainWrap = styled.div`
-  background-color: inherit;
-  border-radius: inherit;
-  border: 1px solid #25282b;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
 `;
 
 export const AsteroidWrap = styled.div`
@@ -51,7 +43,6 @@ export const TitleWrap = styled.div`
   flex-direction: column;
   place-content: center;
   background: none;
-  font-family: Metropolis, sans-serif;
   text-align: center;
   font-weight: 300;
   border-bottom: 0.7px solid #25282b;
@@ -80,7 +71,6 @@ export const Card = styled.div`
   display: flex;
   background: none;
   overflow: hidden;
-  transform: translate('${(props) => -`${props.btnIndex * 500}vw`}');
 `;
 
 export const DetailWrap = styled.div`
@@ -95,27 +85,62 @@ export const Detail = styled.div`
   background: none;
   width: 300px;
   height: 250px;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 30px;
 `;
 
 export const Name = styled.div`
   background: none;
+  font-size: 29px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 `;
 
-export const Text = styled.div``;
+export const Text = styled.div`
+  background: none;
+  font-weight: 100;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: rgb(131 149 155);
+`;
 
-export const Information = styled.div``;
+export const Information = styled.div`
+  font-weight: 500;
+  background: none;
+  margin-bottom: 25px;
+  letter-spacing: 1.5px;
+`;
 
 export const ImageWrap = styled.div`
   width: 200px;
   height: 250px;
   padding: 20px;
+  margin-top: 20px;
   text-align: center;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
 `;
 
-export const Image = styled.div``;
+export const StoneImg = styled.img`
+  width: 130px;
+  height: 130px;
+  background: none;
+`;
 
-export const ImageExplain = styled.div``;
+export const RulerImg = styled.img`
+  width: 40px;
+  height: 30px;
+  background: none;
+`;
+
+export const ImageExplain = styled.div`
+  margin-top: 2px;
+  background: none;
+  letter-spacing: 1.5px;
+`;
 
 export const ArrowBtn = styled.div`
   width: 5px;
@@ -124,7 +149,7 @@ export const ArrowBtn = styled.div`
   font-weight: 800;
   color: rgb(164 186 193);
   position: absolute;
-  left: 1000px;
+  left: 1180px;
   top: 670px;
   cursor: pointer;
 `;
