@@ -24,11 +24,10 @@ export const ModelExplain = styled.div`
   background: #272727;
   height: 10vh;
   font-size: 38px;
-  font-weight: 750;
-  letter-spacing: 5px;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-align: center;
   display: flex;
   place-content: center;
   place-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 `;

@@ -31,10 +31,10 @@ export default function Header() {
       </S.Category>
 
       <S.Category>
-        <S.StyleLink to="/moon">Moon</S.StyleLink>
+        <S.StyleLink to="/reference">Reference</S.StyleLink>
       </S.Category>
       <S.Category>
-        <S.StyleLink to="/reference">Reference</S.StyleLink>
+        <S.StyleLink to="/images">Images</S.StyleLink>
       </S.Category>
       <S.Category>
         <S.StyleLink to="/marsTravel">Mars-Travel</S.StyleLink>

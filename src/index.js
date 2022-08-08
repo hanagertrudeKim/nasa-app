@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background-color: #010001;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+    font-family: 'Roboto', sans-serif;
   }
   body{
     overflow-x: hidden;
