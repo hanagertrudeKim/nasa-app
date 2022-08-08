@@ -77,7 +77,8 @@ export const OptionWrap = styled.div`
 `;
 
 export const OptionLinkWrap = styled.ul`
-  padding-top: 23px;
+  padding-top: 18px;
+  padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 20px;
 `;

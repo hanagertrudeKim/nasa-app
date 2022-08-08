@@ -5,7 +5,6 @@ import Home from './view/home/Home';
 import MarsTravel from './view/MarsTravel';
 import Images from './view/Images';
 import Asteroid from './view/planet/asteroid/Asteroid';
-import Earth from './view/planet/Earth';
 import Planets from './view/planet/Planets';
 import RefHome from './view/reference/RefHome';
 import SolarSystem from './view/SolarSystem';
@@ -16,7 +15,6 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/planet/earth" element={<Earth />} />
         <Route path="/planet/planets" element={<Planets />} />
         <Route path="/planet/asteroid" element={<Asteroid />} />
         <Route path="/marsTravel" element={<MarsTravel />} />
