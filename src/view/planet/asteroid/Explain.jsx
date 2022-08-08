@@ -43,7 +43,7 @@ const Info = styled.div`
   font-family: 'Inconsolata', monospace;
   font-size: 15px;
   padding: 40px;
-  line-height: 160%;
+  line-height: 180%;
   letter-spacing: 2px;
   background: none;
 `;
