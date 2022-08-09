@@ -47,7 +47,7 @@ export default function APOD() {
   return (
     <S.APODWrap>
       <S.APODTitle> APOD - Astronomy Picture Of the Day</S.APODTitle>
-      {data?.mediaType === 'video' ? <VideoAPOD /> : <PhotoAPOD />}
+      {data?.media_type === 'video' ? <VideoAPOD /> : <PhotoAPOD />}
     </S.APODWrap>
   );
 }

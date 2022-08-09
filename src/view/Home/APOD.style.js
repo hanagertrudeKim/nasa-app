@@ -40,7 +40,7 @@ export const Photo = styled.img`
 
 export const VideoWrap = styled.div`
   border: 1px solid gray;
-  width: 80%;
+  width: 60vw;
   text-align: center;
   font-family: monospace;
   word-spacing: 1px;
@@ -62,12 +62,29 @@ export const Title = styled.div`
 export const Explain = styled.div`
   padding-left: 50px;
   padding-right: 50px;
-  height: 440px;
+  height: 400px;
   overflow-y: auto;
+  ::-webkit-scrollbar {
+    width: 6px;
+    opacity: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    visibility: hidden;
+    background-color: #cfd2cf;
+    border-radius: 6px;
+    opacity: 0.2;
+  }
+  :hover {
+    ::-webkit-scrollbar-thumb {
+      visibility: visible;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #73777b;
+    }
+  }
 `;
 
 export const VideoLink = styled.div`
   font-size: 20px;
-  padding-top: 30px;
   padding-bottom: 30px;
 `;
