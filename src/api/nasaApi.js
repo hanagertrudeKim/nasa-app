@@ -16,18 +16,6 @@ export const getAsteroid = (date) => {
   );
 };
 
-export const getImageSearch = (data) => {
-  return axios.get(`https://images-api.nasa.gov/search?q=${data}`);
-};
-
-export const getAssets = () => {
-  return axios.get(`https://images-api.nasa.gov/asset/${API_KEY}`);
-};
-
-export const getMetadata = () => {
-  return axios.get(`https://images-api.nasa.gov/metadata/${API_KEY}`);
-};
-
-export const getCaptions = () => {
-  return axios.get(`https://images-api.nasa.gov/captions/${API_KEY}`);
+export const getImageSearch = (data, type) => {
+  return axios.get(`https://images-api.nasa.gov/search?q=${data}&media_type=${type}`);
 };
