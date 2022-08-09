@@ -4,6 +4,22 @@ import asteroid from '../../../assets/image/asteroid-earth.webp';
 
 const ExplainWrap = styled.div`
   overflow-y: scroll;
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    visibility: hidden;
+    background-color: #cfd2cf;
+    border-radius: 6px;
+  }
+  :hover {
+    ::-webkit-scrollbar-thumb {
+      visibility: visible;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #73777b;
+    }
+  }
   background-color: inherit;
   border-radius: 8%;
   width: 100%;
