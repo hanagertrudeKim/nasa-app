@@ -21,7 +21,7 @@ export const Background = styled.div`
 `;
 
 export const BoxWrap = styled.div`
-  background-color: rgb(16, 16, 17);
+  background-color: rgb(16, 16, 17, 0.3);
   width: 1000px;
   height: 500px;
   border-radius: 8%;
@@ -64,13 +64,17 @@ export const SubTitle = styled.div`
   margin-bottom: 10px;
 `;
 
+export const CardWrap = styled.div`
+  overflow: hidden;
+  background: none;
+`;
+
 export const Card = styled.div`
   width: 500px;
   height: 100%;
   float: left;
   display: flex;
   background: none;
-  overflow: hidden;
 `;
 
 export const DetailWrap = styled.div`
@@ -143,13 +147,19 @@ export const ImageExplain = styled.div`
 `;
 
 export const ArrowBtn = styled.div`
-  width: 5px;
-  height: 5px;
   font-size: 30px;
   font-weight: 800;
   color: rgb(164 186 193);
-  position: absolute;
-  left: 1180px;
-  top: 670px;
   cursor: pointer;
+  display: flex;
+  background: none;
+  margin-top: 20px;
+`;
+
+export const BtnWrap = styled.div`
+  width: 100%;
+  height: 20%;
+  background: none;
+  display: flex;
+  justify-content: space-around;
 `;
