@@ -31,7 +31,7 @@ export default function Header() {
         <S.StyleLink to="/reference">Reference</S.StyleLink>
       </S.Category>
       <S.Category>
-        <S.StyleLink to="/images">Images</S.StyleLink>
+        <S.StyleLink to="/gallery">Gallery</S.StyleLink>
       </S.Category>
       <S.Category>
         <S.StyleLink to="/marsTravel">Mars-Travel</S.StyleLink>
