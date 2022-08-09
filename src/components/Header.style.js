@@ -78,10 +78,11 @@ export const OptionWrap = styled.div`
 
 export const OptionLinkWrap = styled.ul`
   padding-top: 18px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-left: 15px;
-  padding-right: 20px;
+  padding-right: 30px;
 `;
+
 export const Select = styled.div`
   color: white;
   cursor: pointer;

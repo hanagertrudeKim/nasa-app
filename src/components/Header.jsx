@@ -11,11 +11,8 @@ export default function Header() {
         <S.Logo alt="nasa" src={logo} />
       </S.StyleLink>
       <S.Category>
-        <S.StyleLink to="/solarSystem">Solar System</S.StyleLink>
-      </S.Category>
-      <S.Category>
         <S.SelectWrap>
-          <S.Select class="menu bar"> Planets </S.Select>
+          <S.Select class="menu bar"> Solar System </S.Select>
           <S.OptionWrap className="sub-menu">
             {PlanetDropDown.map((item) => {
               return (
