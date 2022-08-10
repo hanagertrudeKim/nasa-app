@@ -57,6 +57,7 @@ const KeyWords = styled.div`
 
 const VideoWrap = styled.video`
   width: 50vw;
+  height: 50vh;
 `;
 
 const Date = styled.div`
@@ -68,32 +69,35 @@ const Date = styled.div`
 
 export default function ImageDetail() {
   const [data, setData] = useState();
-  const [video, setVideo] = useState();
+  const [videoData, setVideoData] = useState();
   const location = useLocation();
 
   useEffect(() => {
     axios.get(data?.json).then((res) => {
-      setVideo(res);
+      setVideoData(res);
       console.log(res);
     });
     setData(location.state);
     console.log(location.state);
   }, [location, data]);
 
+  let videoLink = videoData?.data?.filter((data) => data.split('~')[1] === 'orig.mp4');
+  console.log(videoLink);
+
   return (
     <Wrap key={data?.data?.nasa_id}>
       <Type>{data?.data?.media_type}</Type>
       <Title>{data?.data?.title}</Title>
-      <Date>Last-modified : {video?.headers['last-modified']}</Date>
+      <Date>Last-modified : {videoData?.headers['last-modified']}</Date>
       <VideoWrap controls width="300px">
-        <source src={video?.data[0]} type="video/mp4"></source>
+        {videoLink && <source src={videoLink[0]} type="video/mp4"></source>}
       </VideoWrap>
       <BoldText>{data?.data?.date_created}</BoldText>
       <Text>{data?.data?.description}</Text>
       <BoldText>Credit</BoldText>
       <Text>{data?.data?.secondary_creator}</Text>
       <KeywordsWrap>
-        {data?.data?.keywords.map((data) => {
+        {data?.data?.keywords?.map((data) => {
           return <KeyWords>#{data}</KeyWords>;
         })}
       </KeywordsWrap>
