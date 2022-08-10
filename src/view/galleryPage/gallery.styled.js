@@ -13,7 +13,7 @@ export const Wrap = styled.div`
 
 export const Title = styled.div`
   margin-top: 100px;
-  font-size: 38px;
+  font-size: 48px;
   font-weight: 300;
   color: rgb(29 86 163);
   margin-bottom: 100px;
