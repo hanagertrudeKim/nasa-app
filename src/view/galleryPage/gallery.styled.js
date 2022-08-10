@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrap = styled.div`
-  padding: 100px;
+  padding: 150px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 3000px;
+  padding-bottom: 100px;
   color: white;
   place-content: center;
   letter-spacing: 3px;
@@ -55,15 +55,15 @@ export const AssetsWrap = styled.div`
 `;
 
 export const Asset = styled.img`
-  width: 320px;
-  height: 250px;
+  width: 250px;
+  height: 180px;
 `;
 
 export const AssetTitle = styled.div`
   font-size: 14px;
   margin-top: 10px;
   height: 40px;
-  width: 320px;
+  width: 250px;
   text-align: center;
 `;
 

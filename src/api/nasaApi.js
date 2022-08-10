@@ -16,6 +16,6 @@ export const getAsteroid = (date) => {
   );
 };
 
-export const getImageSearch = (data, type) => {
-  return axios.get(`https://images-api.nasa.gov/search?q=${data}&media_type=${type}`);
+export const getImageSearch = (data, type, page) => {
+  return axios.get(`https://images-api.nasa.gov/search?q=${data}&media_type=${type}&page=${page}`);
 };

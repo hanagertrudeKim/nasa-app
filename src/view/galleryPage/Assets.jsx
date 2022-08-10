@@ -1,19 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import * as S from './gallery.styled';
 import playBtn from '../../assets/image/playButton.png';
-import { getImageSearch } from '../../api/nasaApi';
 import { useNavigate } from 'react-router-dom';
 
-export default function Assets({ search, type }) {
+export default function Assets({ type, arr }) {
   const navigate = useNavigate();
-  const [arr, setArr] = useState([]);
-
-  useEffect(() => {
-    getImageSearch(search, type).then((res) => {
-      setArr(res?.data?.collection?.items);
-      console.log(res?.data);
-    });
-  }, [search, type]);
 
   return (
     <S.AssetsWrap>

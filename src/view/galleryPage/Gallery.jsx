@@ -1,19 +1,41 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as S from './gallery.styled';
 import Assets from './Assets';
+import { getImageSearch } from '../../api/nasaApi';
+import PageNation from './PageNation';
 
 export default function Gallery() {
   const searchRef = useRef();
   const typeRef = useRef();
   const [search, setSearch] = useState('');
   const [type, setType] = useState('image');
+  const [arr, setArr] = useState([]);
+  const [allData, setAllData] = useState();
+  const [page, setPage] = useState(1);
+  const pageArr = [];
 
   useEffect(() => {
-    setSearch(sessionStorage.getItem('search'));
-    setType(sessionStorage.getItem('type'));
-    searchRef.current.value = search;
-    typeRef.current.value = type;
-  }, [search, type]);
+    getImageSearch('', 'image', 1).then((res) => {
+      setArr(res?.data?.collection?.items);
+      setAllData(res?.data);
+      console.log(res?.data.collection.metadata.total_hits);
+    });
+  }, []);
+
+  useEffect(() => {
+    getImageSearch(search, type, page).then((res) => {
+      setArr(res?.data?.collection?.items);
+      setAllData(res?.data);
+      console.log(res?.data.collection.metadata.total_hits);
+    });
+    searchRef.current.value = sessionStorage.getItem('search');
+    typeRef.current.value = sessionStorage.getItem('type');
+  }, [search, type, page]);
+
+  for (let i = 1; i <= Math.ceil(allData?.collection?.metadata?.total_hits / 100); i++) {
+    pageArr.push(i);
+  }
+  console.log(pageArr);
 
   const submit = (e) => {
     e.preventDefault();
@@ -40,8 +62,8 @@ export default function Gallery() {
           <S.Option>video</S.Option>
         </S.Type>
       </S.SearchWrap>
-      <Assets search={search} type={type} />
-      {/*pagenation*/}
+      <Assets type={type} arr={arr} />
+      <PageNation pageArr={pageArr} setPage={setPage} />
     </S.Wrap>
   );
 }
