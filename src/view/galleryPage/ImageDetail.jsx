@@ -4,7 +4,53 @@ import styled from 'styled-components';
 
 const Wrap = styled.div`
   color: white;
-  padding-top: 80px;
+  padding: 150px;
+  * {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.2px;
+  }
+`;
+
+const Type = styled.div`
+  color: rgb(37, 124, 227);
+  font-size: 16px;
+`;
+
+const Title = styled.div`
+  margin-top: 30px;
+  margin-bottom: 100px;
+  color: white;
+  font-size: 41px;
+  font-weight: 600;
+`;
+
+const BoldText = styled.div`
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 70px;
+`;
+
+const Text = styled.div`
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 170%;
+  margin-top: 20px;
+  width: 60vw;
+`;
+
+const KeywordsWrap = styled.div`
+  margin-top: 100px;
+  display: flex;
+`;
+
+const KeyWords = styled.div`
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #80808095;
+  color: #192971;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
 `;
 
 export default function ImageDetail() {
@@ -18,16 +64,20 @@ export default function ImageDetail() {
 
   return (
     <Wrap key={data?.data?.nasa_id}>
-      <div>{data?.data?.data_created}</div>
-      <div>{data?.data?.description}</div>
+      <Type>{data?.data?.media_type}</Type>
+      <Title>{data?.data?.title}</Title>
       <div>
-        {data?.data?.keywords.map((data) => {
-          return <div>{data}</div>;
-        })}
+        <img src={data?.link?.href} alt="nasa-img" />
       </div>
-      <div>{data?.data?.secondary_creator}</div>
-      <div>{data?.data?.title}</div>
-      <img src={data.link?.href} alt="nasa-img" />
+      <BoldText>{data?.data?.date_created}</BoldText>
+      <Text>{data?.data?.description}</Text>
+      <BoldText>Credit</BoldText>
+      <Text>{data?.data?.secondary_creator}</Text>
+      <KeywordsWrap>
+        {data?.data?.keywords.map((data) => {
+          return <KeyWords>#{data}</KeyWords>;
+        })}
+      </KeywordsWrap>
     </Wrap>
   );
 }
