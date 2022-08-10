@@ -15,21 +15,11 @@ export default function Gallery() {
   const pageArr = [];
 
   useEffect(() => {
-    getImageSearch('', 'image', 1).then((res) => {
-      setArr(res?.data?.collection?.items);
-      setAllData(res?.data);
-      console.log(res?.data.collection.metadata.total_hits);
-    });
-  }, []);
-
-  useEffect(() => {
     getImageSearch(search, type, page).then((res) => {
       setArr(res?.data?.collection?.items);
       setAllData(res?.data);
       console.log(res?.data.collection.metadata.total_hits);
     });
-    searchRef.current.value = sessionStorage.getItem('search');
-    typeRef.current.value = sessionStorage.getItem('type');
   }, [search, type, page]);
 
   for (let i = 1; i <= Math.ceil(allData?.collection?.metadata?.total_hits / 100); i++) {
@@ -40,12 +30,10 @@ export default function Gallery() {
   const submit = (e) => {
     e.preventDefault();
     setSearch(searchRef.current?.value);
-    sessionStorage.setItem('search', searchRef.current?.value);
   };
 
   const changeType = () => {
     setType(typeRef.current?.value);
-    sessionStorage.setItem('type', typeRef.current?.value);
   };
 
   console.log(typeRef.current?.value);
