@@ -9,7 +9,7 @@ const Wrap = styled.div`
 `;
 
 const ClockWrap = styled.div`
-  font-size: 15px;
+  font-size: 17px;
   background: none;
 `;
 

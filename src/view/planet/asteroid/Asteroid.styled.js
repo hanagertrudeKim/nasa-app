@@ -53,6 +53,7 @@ export const TitleWrap = styled.div`
 export const Title = styled.div`
   color: white;
   background: none;
+  font-weight: 200;
   font-size: 26px;
 `;
 
@@ -95,21 +96,23 @@ export const Detail = styled.div`
 
 export const Name = styled.div`
   background: none;
-  font-size: 29px;
+  font-size: 26px;
+  font-weight: 500;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 `;
 
 export const Text = styled.div`
   background: none;
-  font-weight: 100;
+  font-weight: 200;
   margin-bottom: 5px;
   font-size: 14px;
   color: rgb(131 149 155);
 `;
 
 export const Information = styled.div`
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 15px;
   background: none;
   margin-bottom: 25px;
   letter-spacing: 1.5px;

@@ -8,25 +8,26 @@ export const Wrap = styled.div`
   color: white;
   place-content: center;
   letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
 `;
 
 export const Title = styled.div`
   margin-top: 100px;
-  font-size: 41px;
-  font-weight: 700;
-  color: white;
+  font-size: 38px;
+  font-weight: 300;
+  color: rgb(29 86 163);
   margin-bottom: 100px;
 `;
 
 export const SearchWrap = styled.form`
   display: grid;
-  grid-template-columns: 240px 60px 50px 200px;
+  grid-template-columns: 260px 40px 50px 260px;
 `;
 
 export const Search = styled.input`
   padding-left: 15px;
   height: 40px;
-  border-radius: 15px 0 0 15px;
+  border-radius: 5px 0 0 5px;
   border: none;
   background-color: rgb(240, 240, 240, 0.5);
   outline: none;
@@ -38,7 +39,7 @@ export const Search = styled.input`
 
 export const SubmitBtn = styled.button`
   border: none;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 5px 5px 0;
   margin: 0;
   text-align: center;
   font-size: 20px;
@@ -75,7 +76,7 @@ export const Type = styled.select`
   color: rgb(255 255 255);
   -webkit-appearance: none;
   padding-left: 15px;
-  border-radius: 15px;
+  border-radius: 5px;
   letter-spacing: 2px;
   outline: none;
 `;

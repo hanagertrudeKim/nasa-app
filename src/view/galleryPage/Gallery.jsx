@@ -13,24 +13,31 @@ export default function Gallery() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    setType(sessionStorage.getItem('type'));
+    setSearch(sessionStorage.getItem('search'));
+  }, []);
+
+  useEffect(() => {
     setType(typeRef.current?.value);
+    sessionStorage.setItem('type', typeRef.current?.value);
 
     getImageSearch(search, type).then((res) => {
       setArr(res?.data?.collection?.items);
-      console.log(res?.data?.collection?.items);
+      console.log(res?.data);
     });
   }, [search, type]);
 
   const submit = (e) => {
     e.preventDefault();
     setSearch(searchRef.current?.value);
+    sessionStorage.setItem('search', searchRef.current?.value);
   };
 
   console.log(typeRef.current?.value);
 
   return (
     <S.Wrap>
-      <S.Title>GALLERY</S.Title>
+      <S.Title>Gallery</S.Title>
       <S.SearchWrap onSubmit={submit}>
         <S.Search placeholder="search" ref={searchRef}></S.Search>
         <S.SubmitBtn>🔍</S.SubmitBtn>
@@ -81,6 +88,7 @@ export default function Gallery() {
               );
             })}
       </S.AssetsWrap>
+      {/*pagenation*/}
     </S.Wrap>
   );
 }
