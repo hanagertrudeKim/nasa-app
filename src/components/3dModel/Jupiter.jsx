@@ -31,7 +31,7 @@ useGLTF.preload('/jupiter.glb');
 export const Jupiter3dModel = () => {
   return (
     <>
-      <Canvas camera={{ fov: 11, position: [0, 10, 15] }} style={{ background: 'transeparent' }}>
+      <Canvas camera={{ fov: 75, position: [150, 150, 50] }} style={{ background: 'transeparent' }}>
         <Suspense>
           <ambientLight intensity={1.5} />
           <Model />
