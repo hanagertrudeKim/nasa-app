@@ -1,3 +1,9 @@
+import * as S from './MarsTravel.styled';
+
 export default function MarsTravel() {
-  return <div>MarsTravel</div>;
+  return (
+    <S.Wrap>
+      <S.Title>Plan to your mars trip!</S.Title>
+    </S.Wrap>
+  );
 }
