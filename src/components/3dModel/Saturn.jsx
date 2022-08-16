@@ -7,7 +7,7 @@ export function Model(props) {
   const saturnRef = useRef();
 
   useFrame(() => {
-    saturnRef.current.rotation.y -= -0.001;
+    saturnRef.current.rotation.y -= -0.003;
   });
 
   return (

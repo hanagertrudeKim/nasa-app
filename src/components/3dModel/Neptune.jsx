@@ -7,13 +7,20 @@ export function Model(props) {
   const neptuneRef = useRef();
 
   useFrame(() => {
-    neptuneRef.current.rotation.y -= -0.001;
+    neptuneRef.current.rotation.y -= -0.003;
   });
 
   return (
     <group {...props} dispose={null} ref={neptuneRef}>
-      <group>
-        <mesh geometry={nodes.Object_2.geometry} material={materials.moon} />
+      <group rotation={[-Math.PI / 2, 0, 0]}>
+        <group rotation={[Math.PI / 2, 0, 0]}>
+          <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+            <mesh
+              geometry={nodes.Sphere_Material002_0.geometry}
+              material={materials['Material.002']}
+            />
+          </group>
+        </group>
       </group>
     </group>
   );
@@ -24,7 +31,10 @@ useGLTF.preload('/neptune.glb');
 export const Neptune3dModel = () => {
   return (
     <>
-      <Canvas camera={{ fov: 10, position: [0, 10, 15] }} style={{ background: 'transeparent' }}>
+      <Canvas
+        camera={{ fov: 80, position: [100, 100, 150] }}
+        style={{ background: 'transeparent' }}
+      >
         <Suspense>
           <ambientLight intensity={0.7} />
           <Model />

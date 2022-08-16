@@ -4,8 +4,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 
 export function Model(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/mercury.glb');
-  const { actions } = useAnimations(animations, group);
+  const { nodes, materials } = useGLTF('/mercury.glb');
 
   useFrame(() => {
     group.current.rotation.y -= -0.003;

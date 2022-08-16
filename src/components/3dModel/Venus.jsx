@@ -7,7 +7,7 @@ export function Model(props) {
   const venusRef = useRef();
 
   useFrame(() => {
-    venusRef.current.rotation.y -= -0.001;
+    venusRef.current.rotation.y -= -0.003;
   });
 
   return (
