@@ -8,6 +8,9 @@ export const Wrap = styled.div`
   background-image: url('${background}');
   background-size: cover;
   padding: 100px;
+  * {
+    background: none;
+  }
 `;
 
 export const Title = styled.div`
