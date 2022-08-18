@@ -9,9 +9,10 @@ export const HomeWrap = styled.div`
   color: white;
   font-family: 'Montserrat';
 `;
+
 export const ModelWrap = styled.div`
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   margin-bottom: 100px;
 `;
 

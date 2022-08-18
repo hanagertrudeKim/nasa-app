@@ -20,8 +20,8 @@ export default function APOD() {
           <S.Title>Title : {data?.title} </S.Title>
           <br />
           <S.Explain>
-            date: {data?.date} <br /> <br />
-            explanation : {data?.explanation} <br />
+            Date: {data?.date} <br /> <br />
+            Explanation : {data?.explanation} <br />
           </S.Explain>
         </S.ExplainWrap>
       </S.PhotoWrap>
@@ -34,8 +34,8 @@ export default function APOD() {
         <S.Title>Title : {data?.title} </S.Title>
         <br />
         <S.Explain>
-          date: {data?.date} <br /> <br />
-          explanation : {data?.explanation} <br />
+          Date: {data?.date} <br /> <br />
+          Explanation : {data?.explanation} <br />
         </S.Explain>
         <S.VideoLink>
           <a href={data?.url}>Go to the video</a>

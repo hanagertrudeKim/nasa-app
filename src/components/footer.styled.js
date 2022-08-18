@@ -3,7 +3,7 @@ import footer from '../assets/image/footer.jpg';
 
 export const FooterWrap = styled.div`
   margin-top: 200px;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   filter: brightness(70%);
   background-image: url('${footer}');

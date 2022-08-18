@@ -14,6 +14,7 @@ export const APODTitle = styled.div`
   margin-bottom: 40px;
   font-weight: 700;
   font-family: 'Montserrat';
+  text-align: center;
 `;
 
 export const PhotoWrap = styled.div`
@@ -21,10 +22,9 @@ export const PhotoWrap = styled.div`
   border: 1px solid gray;
   width: 80%;
   height: 550px;
-  text-align: center;
-  font-family: monospace;
+  font-family: 'Roboto';
   word-spacing: 1px;
-  line-height: 160%;
+  line-height: 165%;
   color: beige;
   font-size: 15px;
 `;
@@ -57,11 +57,13 @@ export const Title = styled.div`
   font-weight: 700;
   font-weight: bold;
   background-color: #2a2b2d;
+  text-align: center;
 `;
 
 export const Explain = styled.div`
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 30px;
   height: 400px;
   overflow-y: auto;
   ::-webkit-scrollbar {

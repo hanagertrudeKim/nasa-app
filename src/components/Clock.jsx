@@ -8,12 +8,12 @@ const Wrap = styled.div`
 `;
 
 const DateWrap = styled.div`
-  font-size: 15px;
+  font-size: 18px;
   background: none;
 `;
 
 const ClockWrap = styled.div`
-  font-size: 26px;
+  font-size: 30px;
   background: none;
 `;
 
