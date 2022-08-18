@@ -10,16 +10,6 @@ export const Wrap = styled.div`
   font-family: 'Montserrat';
 `;
 
-export const ClockWrap = styled.div`
-  background: none;
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  place-content: center;
-  color: white;
-`;
-
 export const ModelWrap = styled.div`
   width: 100vw;
   height: 90vh;
@@ -44,8 +34,8 @@ export const ModelExplain = styled.div`
   font-weight: 700;
   letter-spacing: 2px;
   text-align: center;
-  display: flex;
-  position: fixed;
+  position: absolute;
+  display: ${(props) => (props.status ? 'flex' : 'none')};
   bottom: 0;
   align-content: center;
   align-items: center;

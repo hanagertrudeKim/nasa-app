@@ -1,13 +1,33 @@
 import React, { useState } from 'react';
 import BackArrow from '../../assets/svg/back_arrow.svg';
 import FowardArrow from '../../assets/svg/foward_arrow.svg';
-import Clock from '../../components/Clock';
 
 import * as S from './solarSystem.styled';
 import planets from '../../components/static/planetInfo';
+import { useEffect } from 'react';
 
 export default function SolarSystem() {
   const [index, setIndex] = useState(1);
+  const [status, setStatus] = useState(false);
+
+  const showBar = () => {
+    if (window.pageYOffset > 3) {
+      setStatus(false);
+    } else {
+      setStatus(true);
+    }
+    console.log(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    const watch = () => {
+      window.addEventListener('scroll', showBar);
+    };
+    watch();
+    return () => {
+      window.removeEventListener('scroll', showBar);
+    };
+  }, []);
 
   const ClickBack = () => {
     return index === 1 ? setIndex(8) : setIndex(index - 1);
@@ -19,9 +39,6 @@ export default function SolarSystem() {
 
   return (
     <S.Wrap>
-      <S.ClockWrap>
-        <Clock />
-      </S.ClockWrap>
       {planets
         .filter((data) => data.id === index)
         .map((res) => {
@@ -51,7 +68,7 @@ export default function SolarSystem() {
                 {res.model}
               </S.ModelWrap>
 
-              <S.ModelExplain>
+              <S.ModelExplain status={status}>
                 <S.Icon src={BackArrow} alt="back" onClick={ClickBack} />
                 {res.name}
                 <S.Icon src={FowardArrow} alt="back" onClick={ClickFoward} />
