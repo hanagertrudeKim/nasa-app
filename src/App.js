@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Home from './view/home/Home';
+import Home from './view/homepage/Home';
 import MarsTravel from './view/MarsTravel';
 import Gallery from './view/galleryPage/Gallery';
 import Asteroid from './view/planet/asteroid/Asteroid';
