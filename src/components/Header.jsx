@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './Header.style';
+import * as S from './header.style';
 import './static/dropDown';
 import { PlanetDropDown } from './static/dropDown';
 import logo from '../assets/image/nasalogo.png';

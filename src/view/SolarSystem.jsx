@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import BackArrow from '../assets/svg/back_arrow.svg';
 import FowardArrow from '../assets/svg/foward_arrow.svg';
 
-import * as S from './SolarSystem.styled';
+import * as S from './solarSystem.styled';
 import planets from '../components/static/planetInfo';
 
 export default function SolarSystem() {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import * as S from './NasaTech.styled';
+import * as S from './nasaTech.styled';
 import { getNasaTech } from '../../api/nasaApi';
 
 export default function NasaTech() {

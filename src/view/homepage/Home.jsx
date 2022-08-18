@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './Home.style';
+import * as S from './home.styled';
 import APOD from './APOD';
 import { Earth3dModel } from '../../components/3dModel/Earth';
 import Clock from '../../components/Watch';

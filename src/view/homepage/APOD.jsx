@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import * as S from './APOD.style';
+import * as S from './apod.styled';
 import { getAPOD } from '../../api/nasaApi';
 
 export default function APOD() {

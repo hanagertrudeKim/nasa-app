@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './NasaTechDetail.styled';
+import * as S from './nasaTechDetail.styled';
 import { useLocation } from 'react-router-dom';
 
 export default function NasaTechDetail() {

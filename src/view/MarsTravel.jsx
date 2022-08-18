@@ -1,4 +1,4 @@
-import * as S from './MarsTravel.styled';
+import * as S from './marsTravel.styled';
 import { Email } from './Email';
 
 export default function MarsTravel() {
