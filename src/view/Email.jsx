@@ -81,7 +81,7 @@ export const Email = () => {
     emailjs.sendForm('service_eaclzul', 'template_ey4bhs7', form.current, 'MgEX-M6RWTIlSSO3n').then(
       (result) => {
         console.log(result.text);
-        alert('complete sending message!');
+        alert('Complete Sending Message! Check your email~');
         messageRef.current.value = '';
       },
       (error) => {
@@ -105,8 +105,8 @@ export const Email = () => {
           <Lavel>Message</Lavel>
           <Message name="message" ref={messageRef} />
         </SubWrap>
-        <InputBtn type="submit" value="Send" />
       </Form>
+      <InputBtn type="submit" value="Send" />
     </Wrap>
   );
 };
