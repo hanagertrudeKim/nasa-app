@@ -7,7 +7,7 @@ import Gallery from './view/galleryPage/Gallery';
 import Asteroid from './view/planet/asteroid/Asteroid';
 import Planets from './view/planet/Planets';
 import RefHome from './view/reference/RefHome';
-import SolarSystem from './view/SolarSystem';
+import SolarSystem from './view/planet/SolarSystem';
 import NasaTechDetail from './view/reference/NasaTechDetail';
 import ImageDetail from './view/galleryPage/ImageDetail';
 import VideoDetail from './view/galleryPage/VideoDetail';

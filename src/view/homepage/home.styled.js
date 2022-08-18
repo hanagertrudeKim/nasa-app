@@ -7,6 +7,7 @@ export const HomeWrap = styled.div`
   place-content: center;
   place-items: center;
   color: white;
+  font-family: 'Montserrat';
 `;
 export const ModelWrap = styled.div`
   width: 100vw;

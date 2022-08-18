@@ -10,10 +10,10 @@ export const APODWrap = styled.div`
 `;
 
 export const APODTitle = styled.div`
-  font-size: 30px;
+  font-size: 27px;
   margin-bottom: 40px;
   font-weight: 700;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Montserrat';
 `;
 
 export const PhotoWrap = styled.div`
@@ -52,7 +52,7 @@ export const VideoWrap = styled.div`
 export const Title = styled.div`
   padding: 15px;
   color: rgb(255 255 255);
-  font-family: Metropolis, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat';
   font-size: 23px;
   font-weight: 700;
   font-weight: bold;

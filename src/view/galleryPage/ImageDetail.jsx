@@ -58,6 +58,7 @@ export default function ImageDetail() {
   const location = useLocation();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setData(location.state);
     console.log(location.state);
   }, [location]);

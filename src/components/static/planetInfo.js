@@ -6,12 +6,20 @@ import { Neptune3dModel } from '../3dModel/Neptune';
 import { Saturn3dModel } from '../3dModel/Saturn';
 import { Uranus3dModel } from '../3dModel/Uranus';
 import { Venus3dModel } from '../3dModel/Venus';
+import mercuryImg from '../../assets/image/mercury.png';
+import venusImg from '../../assets/image/venus.png';
+import earthImg from '../../assets/image/earth.png';
+import marsImg from '../../assets/image/mars.png';
+import jupiterImg from '../../assets/image/jupiter.png';
+import saturnImg from '../../assets/image/saturn.png';
+import uranusImg from '../../assets/image/uranus.png';
+import neptuneImg from '../../assets/image/neptune.png';
 
 const planets = [
   {
     name: 'Mercury',
     id: 1,
-    image: '../../assets/image/mercury.png',
+    image: mercuryImg,
     explain:
       'The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth Moon.',
     fullExplain:
@@ -23,7 +31,7 @@ const planets = [
   {
     name: 'Venus',
     id: 2,
-    image: '../../assets/image/venus.png',
+    image: venusImg,
     explain:
       'Venus is the second planet from the Sun and is Earth is closest planetary neighbor. It is one of the four inner, terrestrial (or rocky) planets, and it’s often called Earth’s twin because it’s similar in size and density. These are not identical twins, however – there are radical differences between the two worlds.',
     fullExplain:
@@ -35,7 +43,7 @@ const planets = [
   {
     name: 'Earth',
     id: 3,
-    image: '../../assets/image/earth.png',
+    image: earthImg,
     explain:
       'Earth—our home planet—is the only place we know of so far that is inhabited by living things. Its also the only planet in our solar system with liquid water on the surface.',
     fullExplain:
@@ -47,7 +55,7 @@ const planets = [
   {
     name: 'Mars',
     id: 4,
-    image: '../../assets/image/mars.png',
+    image: marsImg,
     explain:
       ' Mars is the fourth planet from the Sun a dusty, cold, desert world with a very thin atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.',
     fullExplain:
@@ -59,7 +67,7 @@ const planets = [
   {
     name: 'Jupiter',
     id: 5,
-    image: '../../assets/image/jupiter.png',
+    image: jupiterImg,
     explain:
       'Jupiter has a long history of surprising scientists all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.',
     fullExplain:
@@ -71,7 +79,7 @@ const planets = [
   {
     name: 'Saturn',
     id: 6,
-    image: '../../assets/image/saturn.png',
+    image: saturnImg,
     explain:
       'Saturn is the sixth planet from the Sun and the second-largest planet in our solar system.',
     fullExplain:
@@ -83,7 +91,7 @@ const planets = [
   {
     name: 'Uranus',
     id: 7,
-    image: '../../assets/image/uranus.png',
+    image: uranusImg,
     explain:
       'Uranus is the seventh planet from the Sun, and has the third-largest diameter in our solar system. It was the first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.',
     fullExplain:
@@ -95,7 +103,7 @@ const planets = [
   {
     name: 'Neptune',
     id: 8,
-    image: '../../assets/image/neptune.png',
+    image: neptuneImg,
     explain:
       'Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system.',
     fullExplain:

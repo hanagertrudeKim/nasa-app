@@ -29,7 +29,7 @@ export const Earth3dModel = () => {
     <>
       <Canvas camera={{ fov: 11, position: [0, 10, 15] }} style={{ background: 'transeparent' }}>
         <Suspense>
-          <ambientLight intensity={1.5} />
+          <ambientLight intensity={1} />
           <Model />
         </Suspense>
       </Canvas>

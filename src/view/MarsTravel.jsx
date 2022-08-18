@@ -4,7 +4,7 @@ import { Email } from './Email';
 export default function MarsTravel() {
   return (
     <S.Wrap>
-      <S.Title>Plan to your mars trip!</S.Title>
+      <S.Title>Plan to your Mars trip!</S.Title>
       <Email />
     </S.Wrap>
   );

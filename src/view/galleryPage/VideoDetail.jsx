@@ -73,6 +73,7 @@ export default function ImageDetail() {
   const location = useLocation();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     axios.get(data?.json).then((res) => {
       setVideoData(res);
       console.log(res);

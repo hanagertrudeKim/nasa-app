@@ -21,7 +21,7 @@ export default function Footer() {
           </S.IconLink>
         </S.IconWrap>
         <S.Explain>
-          This site is maintained by Hana Kim with passion
+          This site is maintained by Hana Kim
           <br />
           NASA Official: Kristen Erickson
           <br />

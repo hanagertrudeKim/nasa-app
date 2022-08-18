@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import BackArrow from '../assets/svg/back_arrow.svg';
-import FowardArrow from '../assets/svg/foward_arrow.svg';
+import BackArrow from '../../assets/svg/back_arrow.svg';
+import FowardArrow from '../../assets/svg/foward_arrow.svg';
+import Clock from '../../components/Clock';
 
 import * as S from './solarSystem.styled';
-import planets from '../components/static/planetInfo';
+import planets from '../../components/static/planetInfo';
 
 export default function SolarSystem() {
   const [index, setIndex] = useState(1);
@@ -18,6 +19,9 @@ export default function SolarSystem() {
 
   return (
     <S.Wrap>
+      <S.ClockWrap>
+        <Clock />
+      </S.ClockWrap>
       {planets
         .filter((data) => data.id === index)
         .map((res) => {

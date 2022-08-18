@@ -24,7 +24,7 @@ useGLTF.preload('/venus.glb');
 export const Venus3dModel = () => {
   return (
     <>
-      <Canvas camera={{ fov: 7, position: [15, 15, 15] }} style={{ background: 'transeparent' }}>
+      <Canvas camera={{ fov: 8, position: [15, 15, 15] }} style={{ background: 'transeparent' }}>
         <Suspense>
           <ambientLight intensity={1} />
           <Model />

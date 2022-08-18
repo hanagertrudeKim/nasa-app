@@ -14,22 +14,26 @@ const Lavel = styled.label`
   font-family: 'Montserrat';
   color: black;
   font-weight: 200;
-  font-size: 23px;
+  font-size: 20px;
   letter-spacing: 3px;
   background: none;
-  margin-top: 100px;
   margin-left: 50px;
   margin-right: 50px;
+  width: 130px;
 `;
 
 const Input = styled.input`
   background: none;
   outline: none;
-  height: 30px;
-  width: 270px;
+  height: 20px;
+  width: 250px;
   font-size: 15px;
-  padding: 5px;
+  padding: 10px;
   border: 0.7px solid gray;
+  font-family: monospace;
+  :focus {
+    background-color: rgb(240, 240, 240, 0.2);
+  }
 `;
 
 const Form = styled.form`
@@ -37,7 +41,21 @@ const Form = styled.form`
 `;
 
 const SubWrap = styled.div`
-  margin: 50px;
+  margin: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+`;
+
+const Message = styled.textarea`
+  height: 200px;
+  width: 50vw;
+  border: 0.7px solid gray;
+  padding: 10px;
+  outline: none;
+  :focus {
+    background-color: rgb(240, 240, 240, 0.2);
+  }
 `;
 
 const InputBtn = styled.input`
@@ -46,13 +64,11 @@ const InputBtn = styled.input`
   height: 30px;
   width: 50px;
   cursor: pointer;
-`;
-
-const Message = styled.textarea`
-  height: 300px;
-  width: 50vw;
-  border: 0.7px solid gray;
-  padding: 5px;
+  margin-left: 950px;
+  border: 0.7px solid black;
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: 300;
 `;
 
 export const Email = () => {
@@ -88,8 +104,8 @@ export const Email = () => {
         <SubWrap>
           <Lavel>Message</Lavel>
           <Message name="message" ref={messageRef} />
-          <InputBtn type="submit" value="Send" />
         </SubWrap>
+        <InputBtn type="submit" value="Send" />
       </Form>
     </Wrap>
   );

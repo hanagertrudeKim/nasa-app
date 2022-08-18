@@ -7,8 +7,17 @@ export const Wrap = styled.div`
   place-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: white;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
+`;
+
+export const ClockWrap = styled.div`
+  background: none;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  place-content: center;
+  color: white;
 `;
 
 export const ModelWrap = styled.div`
@@ -17,10 +26,14 @@ export const ModelWrap = styled.div`
   display: flex;
   position: relative;
   z-index: 1;
+  padding-top: 50px;
 `;
 
 export const DetailWrap = styled.div`
   height: 100vh;
+  * {
+    background-color: rgb(5, 5, 5, 0.3);
+  }
 `;
 
 export const ModelExplain = styled.div`
@@ -46,14 +59,13 @@ export const Icon = styled.img`
 `;
 
 export const ModelDetail = styled.div`
-  background-color: rgb(0, 0, 0, 0.3);
   display: flex;
   position: absolute;
   top: 0;
-  padding-top: 300px;
+  place-content: center;
   flex-direction: column;
   width: 400px;
-  height: 63vh;
+  height: 90vh;
   border: 1px solid white;
   z-index: 2;
 `;

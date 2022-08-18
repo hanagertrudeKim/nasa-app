@@ -25,12 +25,15 @@ export const PlanetWrap = styled.div`
   margin-top: 50px;
   display: grid;
   grid-template-columns: 260px 1fr;
+  place-content: center;
+  place-items: center;
 `;
 
 export const Image = styled.img`
-  height: 260px;
-  width: 260px;
+  height: 210px;
+  width: 210px;
   background: none;
+  display: flex;
 `;
 
 export const ExplainWrap = styled.div`
@@ -43,8 +46,7 @@ export const Name = styled.div`
   background: none;
   font-size: 25px;
   font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 `;
 
 export const Explain = styled.div`
