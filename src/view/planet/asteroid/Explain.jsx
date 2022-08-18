@@ -48,18 +48,16 @@ const Title = styled.div`
   margin-top: 80px;
   margin-bottom: 40px;
   background: none;
-  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Roboto';
   font-size: 30px;
   color: white;
 `;
 
 const Info = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Roboto';
   font-size: 15px;
-  padding: 40px;
-  line-height: 180%;
+  padding: 60px;
+  line-height: 190%;
   letter-spacing: 2px;
   background: none;
 `;

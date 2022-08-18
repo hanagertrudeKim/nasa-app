@@ -115,12 +115,3 @@ export const SubTitle = styled.div`
   width: 200px;
   border-top: 1px solid rgb(255, 255, 255, 0.5);
 `;
-
-export const Next = styled.div`
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  bottom: 15px;
-  right: 17px;
-  cursor: pointer;
-`;

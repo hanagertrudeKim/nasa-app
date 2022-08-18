@@ -49,6 +49,9 @@ export const Title = styled.div`
   color: #9bdaf1;
   padding: 5px;
   background-color: inherit;
+  .highlight {
+    background: none;
+  }
 `;
 
 export const Number = styled.div`
@@ -67,7 +70,4 @@ export const Warp = styled.div`
   place-self: center;
   color: white;
   padding: 100px;
-  .highlight {
-    color: orange;
-  }
 `;

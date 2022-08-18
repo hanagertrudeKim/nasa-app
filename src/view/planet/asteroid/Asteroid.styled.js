@@ -7,7 +7,6 @@ export const Warp = styled.div`
   height: 100vh;
   background-image: url('${image}');
   background-size: cover;
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap');
   font-family: 'Roboto Mono', monospace;
 `;
 
@@ -53,7 +52,7 @@ export const TitleWrap = styled.div`
 export const Title = styled.div`
   color: white;
   background: none;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 26px;
 `;
 

@@ -63,7 +63,6 @@ export default function SolarSystem() {
                       <S.SubTitle>Type Of Planet</S.SubTitle>
                     </S.InfoWrap>
                   </S.Detail>
-                  <S.Next onClick={ClickFoward}>→</S.Next>
                 </S.ModelDetail>
                 {res.model}
               </S.ModelWrap>
