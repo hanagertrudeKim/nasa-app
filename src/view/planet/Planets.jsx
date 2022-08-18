@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './Planets.styled';
+import * as S from './planets.styled';
 import planetInfo from '../../components/static/planetInfo';
 
 export default function Planets() {
