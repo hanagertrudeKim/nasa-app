@@ -11,7 +11,7 @@ export default function SolarSystem() {
   const [status, setStatus] = useState(false);
 
   const showBar = () => {
-    if (window.pageYOffset > 3) {
+    if (window.pageYOffset > 20) {
       setStatus(false);
     } else {
       setStatus(true);
