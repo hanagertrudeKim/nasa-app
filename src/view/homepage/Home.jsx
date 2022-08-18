@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './Home.style';
 import APOD from './APOD';
 import { Earth3dModel } from '../../components/3dModel/Earth';
-import Clock from '../../components/Clock';
+import Clock from '../../components/Watch';
 
 export default function Home() {
   return (
