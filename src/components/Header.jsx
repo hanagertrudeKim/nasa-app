@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './Header.style';
-import './Static/dropDown';
-import { PlanetDropDown } from './Static/dropDown';
+import './static/dropDown';
+import { PlanetDropDown } from './static/dropDown';
 import logo from '../assets/image/nasalogo.png';
 
 export default function Header() {

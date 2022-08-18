@@ -3,7 +3,7 @@ import BackArrow from '../assets/svg/back_arrow.svg';
 import FowardArrow from '../assets/svg/foward_arrow.svg';
 
 import * as S from './SolarSystem.styled';
-import planets from '../components/Static/planetInfo';
+import planets from '../components/static/planetInfo';
 
 export default function SolarSystem() {
   const [index, setIndex] = useState(1);

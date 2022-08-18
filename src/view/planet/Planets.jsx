@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './Planets.styled';
-import planetInfo from '../../components/Static/planetInfo';
+import planetInfo from '../../components/static/planetInfo';
 
 export default function Planets() {
   return (

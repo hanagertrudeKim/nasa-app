@@ -1,6 +1,6 @@
 import React from 'react';
 import NasaTech from './NasaTech';
-import * as S from './refHome.styled';
+import * as S from './RefHome.styled';
 
 export default function RefHome() {
   return (

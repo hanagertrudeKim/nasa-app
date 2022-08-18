@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './gallery.styled';
+import * as S from './Gallery.styled';
 import playBtn from '../../assets/image/playButton.png';
 import { useNavigate } from 'react-router-dom';
 

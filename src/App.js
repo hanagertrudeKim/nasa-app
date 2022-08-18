@@ -1,16 +1,16 @@
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Home from './view/Home/Home';
+import Home from './view/home/Home';
 import MarsTravel from './view/MarsTravel';
-import Gallery from './view/GalleryPage/Gallery';
-import Asteroid from './view/planet/Asteroid/Asteroid';
+import Gallery from './view/galleryPage/Gallery';
+import Asteroid from './view/planet/asteroid/Asteroid';
 import Planets from './view/planet/Planets';
-import RefHome from './view/Reference/RefHome';
+import RefHome from './view/reference/RefHome';
 import SolarSystem from './view/SolarSystem';
-import NasaTechDetail from './view/Reference/NasaTechDetail';
-import ImageDetail from './view/GalleryPage/ImageDetail';
-import VideoDetail from './view/GalleryPage/VideoDetail';
+import NasaTechDetail from './view/reference/NasaTechDetail';
+import ImageDetail from './view/galleryPage/ImageDetail';
+import VideoDetail from './view/galleryPage/VideoDetail';
 
 function App() {
   return (
