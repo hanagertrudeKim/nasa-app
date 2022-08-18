@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import * as S from './Gallery.styled';
+import * as S from './gallery.styled';
 import Assets from './Assets';
 import { getImageSearch } from '../../api/nasaApi';
 import PageNation from './PageNation';
