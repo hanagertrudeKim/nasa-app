@@ -3,6 +3,7 @@ import * as S from './gallery.styled';
 import Assets from './Assets';
 import { getImageSearch } from '../../api/nasaApi';
 import PageNation from './PageNation';
+import TopBtn from '../../components/TopBtn';
 
 export default function Gallery() {
   const searchRef = useRef();
@@ -40,6 +41,7 @@ export default function Gallery() {
 
   return (
     <S.Wrap>
+      <TopBtn />
       <S.Title>Gallery</S.Title>
       <S.SearchWrap onSubmit={submit}>
         <S.Search placeholder="search" ref={searchRef}></S.Search>
