@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as S from './planets.styled';
 import planetInfo from '../../components/static/planetInfo';
 
 export default function Planets() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <S.Background>
       <S.Wrap>

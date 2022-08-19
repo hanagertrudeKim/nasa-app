@@ -21,6 +21,7 @@ export default function Gallery() {
       setAllData(res?.data);
       console.log(res?.data.collection.metadata.total_hits);
     });
+    window.scrollTo(0, 0);
   }, [search, type, page]);
 
   for (let i = 1; i <= Math.ceil(allData?.collection?.metadata?.total_hits / 100); i++) {

@@ -8,18 +8,19 @@ import { useEffect } from 'react';
 
 export default function SolarSystem() {
   const [index, setIndex] = useState(1);
-  const [status, setStatus] = useState(false);
+  const [status, setStatus] = useState(true);
 
   const showBar = () => {
-    if (window.pageYOffset > 20) {
-      setStatus(false);
-    } else {
+    if (window.pageYOffset < 20) {
       setStatus(true);
+    } else {
+      setStatus(false);
     }
     console.log(window.pageYOffset);
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const watch = () => {
       window.addEventListener('scroll', showBar);
     };

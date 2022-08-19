@@ -1,11 +1,15 @@
 import React from 'react';
 import * as S from './nasaTechDetail.styled';
 import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function NasaTechDetail() {
   const location = useLocation();
   const data = location.state;
   console.log(data);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [data]);
 
   return (
     <S.Warp>

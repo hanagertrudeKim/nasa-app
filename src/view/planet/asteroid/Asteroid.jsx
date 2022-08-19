@@ -26,6 +26,7 @@ export default function Asteroid() {
       console.log(res);
       setArr(res?.data?.near_earth_objects[`${dateStr}`]);
     });
+    window.scrollTo(0, 0);
   }, []);
 
   const nextBtn = () => {
