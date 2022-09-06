@@ -18,7 +18,17 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      refetchOnMount: false,
+      refetchOnReconnect: false,
+      retry: false,
+      staleTime: 5 * 60 * 1000,
+    },
+  },
+});
 root.render(
   <>
     <GlobalStyle />
