@@ -9,7 +9,7 @@ export default function Assets({ type, arr }) {
   return (
     <S.AssetsWrap>
       {type === 'image'
-        ? arr.map((data) => {
+        ? arr?.map((data) => {
             return (
               <S.ImageWrap
                 key={data.data[0].nasa_id}
@@ -27,7 +27,7 @@ export default function Assets({ type, arr }) {
               </S.ImageWrap>
             );
           })
-        : arr.map((data) => {
+        : arr?.map((data) => {
             return (
               <S.VideoWrap
                 key={data.data[0].nasa_id}
