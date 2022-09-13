@@ -1,15 +1,18 @@
 import React from 'react';
 import * as S from './gallery.styled';
 import playBtn from '../../assets/image/playButton.png';
-import { useNavigate } from 'react-router-dom';
+import { useQuery } from 'react-query';
+import { getImageSearch } from '../../api/nasaApi';
 
-export default function Assets({ type, arr }) {
-  const navigate = useNavigate();
+export default function Assets(type) {
+  const { data: res } = useQuery(['galley',{search, type, page}], () => getImageSearch(search, type, page))
+  
+  const arr = res?.data?.collection?.items;
 
   return (
     <S.AssetsWrap>
       {type === 'image'
-        ? arr?.map((data) => {
+        ? arr?.map((data, index) => {
             return (
               <S.ImageWrap
                 key={data.data[0].nasa_id}
